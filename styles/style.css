@@ -492,6 +492,18 @@
     height:90px;
 }
 
+.previous{
+    position: relative;
+    right: 46px;
+    
+}
+
+.next{
+    position: relative;
+    left: 55px;
+    
+}
+
 
 
 
