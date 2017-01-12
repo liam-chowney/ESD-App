@@ -11,26 +11,29 @@
                    {
                       lat: 51.630151,
                       lng: -0.755353,
-                      name: "Camping Praia da Barra",
-                      address1:"Rua Diogo Cão, 125",
-                      address2: "Praia da Barra",
-                      postalCode: "3830-772 Gafanha da Nazaré" // don't insert comma in the last item of each marker
+                      name: "Wycombe Abbey",
+                      address1:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                      address2: "consectetur adipiscing elit.",
+                      postalCode: "HP13 5RB",
+                      markerLink: "marker1.html"// don't insert comma in the last item of each marker
                    },
                    {
                       lat: 51.625370,
                       lng: -0.742435,
-                      name: "Camping Costa Nova",
-                      address1:"Quinta dos Patos, n.º 2",
-                      address2: "Praia da Costa Nova",
-                      postalCode: "3830-453 Gafanha da Encarnação" // don't insert comma in the last item of each marker
+                      name: "Hen and Chicken",
+                      address1:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                      address2: "consectetur adipiscing elit.",
+                      postalCode: "HP13 5RB",
+                      markerLink: "marker2.html"// don't insert comma in the last item of each marker
                    },
                    {
                       lat: 51.636330,
                       lng: -0.762734,
-                      name: "Camping Gafanha da Nazaré",
-                      address1:"Rua dos Balneários do Complexo Desportivo",
-                      address2: "Gafanha da Nazaré",
-                      postalCode: "3830-225 Gafanha da Nazaré" // don't insert comma in the last item of each marker
+                      name: "Mary Christie Hostel",
+                      address1:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                      address2: "consectetur adipiscing elit.",
+                      postalCode: "HP13 5RB",
+                      markerLink: "marker3.html"// don't insert comma in the last item of each marker
                    } // don't insert comma in the last item
                 ];
 
@@ -75,8 +78,9 @@
                       var address1 = markersData[i].address1;
                       var address2 = markersData[i].address2;
                       var postalCode = markersData[i].postalCode;
+                      var markerLink = markersData[i].markerLink;
 
-                      createMarker(latlng, name, address1, address2, postalCode);
+                      createMarker(latlng, name, address1, address2, postalCode,markerLink);
 
                       // marker position is added to bounds variable
                       bounds.extend(latlng);  
@@ -88,7 +92,7 @@
                 }
 
                 // This function creates each marker and it sets their Info Window content
-                function createMarker(latlng, name, address1, address2, postalCode){
+                function createMarker(latlng, name, address1, address2, postalCode,markerLink){
                    var marker = new google.maps.Marker({
                       map: map,
                       position: latlng,
@@ -105,7 +109,7 @@
                             '<div class="iw_title">' + name + '</div>' +
                          '<div class="iw_content">' + address1 + '<br />' +
                          address2 + '<br />' +
-                         postalCode + '</div></div>';
+                         postalCode + '<br />' + '<a href="' + markerLink + '">Go to Location' + '</a></div></div>';
 
                       // including content to the Info Window.
                       infoWindow.setContent(iwContent);
