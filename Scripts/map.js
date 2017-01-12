@@ -1,7 +1,4 @@
-                // *
-                // * Add multiple markers
-                // * 2013 - en.marnoto.com
-                // *
+
 
                 // necessary variables
                 var map;
