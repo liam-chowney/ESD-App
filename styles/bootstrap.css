@@ -8426,14 +8426,15 @@ ul.tabs li.active-tab{
 }
 
 .header-dark .header-logo{
-    background-image:url(../images/logo-light.png);
-    background-size:93px 18px;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top:21px;
-    width:93px;
-    height:18px;
-    z-index:12;
+    background-image: url(../images/logo-light.png);
+    background-size: 145px 31px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 21px;
+    width: 142px;
+    height: 38px;
+    z-index: 12;
+    background-repeat: no-repeat;
 }
 
 /*Header Light*/
