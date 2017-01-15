@@ -66,7 +66,7 @@
      var request = {
        origin: coords,
        destination: new google.maps.LatLng(51.638511,-0.807860), //this can be any lat or long IE the markers <--LUKE
-       travelMode: google.maps.DirectionsTravelMode.WALKING
+       travelMode: google.maps.DirectionsTravelMode.WALKING //travel mode
      };
 
      directionsService.route(request, function (response, status) {
