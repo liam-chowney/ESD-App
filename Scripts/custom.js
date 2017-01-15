@@ -6,10 +6,13 @@ $(window).load(function() {
 	//$("#preloader").delay(100).fadeOut("slow"); // will fade out the white DIV that covers the website.
 	$("#status").addClass('hide-status'); // will first fade out the loading animation
 	$("#preloader").addClass('hide-preloader'); // will fade out the white DIV that covers the website.
+    
+    
 });
 
 
 $( document ).ready(function() {
+    
     
      //click function
     
@@ -17,6 +20,7 @@ $( document ).ready(function() {
         
         //$( ".click-hide" ).hide();
         $( ".army-video" ).show();
+        $('#ww2-app').attr("autoplay","");
     });
    
          
