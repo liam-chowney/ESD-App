@@ -11,7 +11,7 @@
                    {
                       lat: 51.630151,
                       lng: -0.755353,
-                      name: "Wycombe Abbey",
+                      name: "Mary Christie Hostel",
                       address1:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                       address2: "consectetur adipiscing elit.",
                       postalCode: "HP13 5RB",
@@ -29,7 +29,7 @@
                    {
                       lat: 51.636330,
                       lng: -0.762734,
-                      name: "Mary Christie Hostel",
+                      name: "Wycombe Abbey",
                       address1:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                       address2: "consectetur adipiscing elit.",
                       postalCode: "HP13 5RB",
